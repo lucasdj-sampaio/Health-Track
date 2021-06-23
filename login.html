@@ -24,43 +24,80 @@
   <body>
     <div class="container-fluid">
       <form>
+
         <div>
-          <input
-            type="email"
-            class="form-control"
-            id="email"
-            placeholder="E-mail"
-          />
+          <input type="email" class="form-control" id="email" placeholder="E-mail" required="true"/>
         </div>
+
         <div>
-          <input
-            type="password"
-            class="form-control"
-            id="pwd"
-            placeholder="Senha"
-          />
+          <input type="password" class="form-control" id="pwd" placeholder="Senha" required="true"/>
         </div>
+        
         <div>
           <label><input type="checkbox" /> Lembre-me</label>
         </div>
+
         <div class="acess">
           <a href="./index.html">
-            <button
-              type="reset"
-              class="btn btn-primary"
-              onclick="location.href='./index.html'"
-            >
+            <button type="reset" class="btn btn-primary" onclick="location.href='./index.html'">
               Acessar
             </button>
           </a>
         </div>
+
         <div class="subscribe">
-          <a href="./subscribe.html">Criar nova conta</a>
+          <a type="button" data-bs-toggle="modal" data-bs-target="#newUser"> 
+          CRIAR NOVA CONTA
+          </a>     
+        </div>
+
+        <div class="modal fade" id="newUser" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+
+              <div class="modal-header">
+                <h5>Cadastre-se</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+
+              <div class="modal-body">
+
+                <div>
+                  <input type="text" class="form-control" id="nome_user" placeholder="Nome de usuário"/>
+                </div>
+                
+                <div>
+                  <input type="email" class="form-control" id="email" placeholder="E-mail"/>
+                </div>
+
+                <div>
+                  <input type="password" class="form-control" id="pwd" placeholder="Senha"/>
+                </div>
+                
+                <div>
+                  <input type="password" class="form-control" id="pwd2" placeholder="Confirmar Senha"/>
+                </div>
+
+                <div>
+                  <label>Data de Nascimento</label>
+                  <input type="date" class="form-control" id="dt_nasc" placeholder="Data de Nascimento"/>
+                </div>
+              
+              <div class="login">
+                <a href="./login.html">
+                  <button type="reset" class="btn btn-success" onclick="location.href='./login.html'">
+                    Cria conta!
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </form>
-      <div class="copyright">
-        <footer>Copyright &copy; HHO - Health Historic Online 2021</footer>
-      </div>
+    </div>
+
+    <div class="copyright">
+      <footer>Copyright &copy; HHO - Health Historic Online 2021</footer>
     </div>
   </body>
 </html>
