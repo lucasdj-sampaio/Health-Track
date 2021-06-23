@@ -82,3 +82,21 @@ button:focus{
 .subscribe a{
   text-decoration: none;
 }
+
+@media screen and (max-width: 1920px) {
+  main {
+    height: 1920px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  main {
+    height: 980px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  main {
+    height: 520px;
+  }
+}

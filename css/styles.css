@@ -1,44 +1,28 @@
 .container, .container-fluid {
-  background-color: gray;
+  background-color: wheat;
+  opacity: 80%;
 }
 
-.row {
-  margin-bottom: 20px;
-  box-sizing: border-box;
+#HHLogo{
+  border-top: 10px;
 }
 
-header, main, footer {
-  background-color: aqua;
-  border: 1px solid #c0c0c0;
-  font-size: 50px;
-  padding: 10px 0;
-  text-align: center;
+.modal{
+  width: 300px;
 }
 
-main {
-  background-color: white;
+.modal-content{
+  width: 300px;
 }
 
-@media screen and (max-width: 1920px) {
-  main {
-    height: 70vh;
-  }
+.list-group-item:hover
+{
+  background-color: aqua!important;
 }
 
-@media screen and (max-width: 980px) {
-  main {
-    height: 60vh;
-  }
+.navbar-toggler{
+  border: none;
 }
 
-@media screen and (max-width: 520px) {
-  main {
-    height: 50vh;
-  }
-}
-
-@media screen and (max-width: 360px) {
-  main {
-    background-color: var(--bs-warning);
-  }
+.navbar-brand{
 }
