@@ -18,7 +18,7 @@ form{
 
 body{
   font-family: 'Work Sans', sans-serif;
-  background-image: url('../_img/backgroundLogin.jpg');
+  background-image: url('../_img/Login/backgroundLogin.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -67,11 +67,6 @@ button:focus{
   transition: all 0.5s;
 }
 
-.copyright{
-  text-align: center;
-  color: #fff;
-}
-
 .subscribe{
   text-align: center;
   font-size: 15px;
@@ -85,4 +80,11 @@ label{
   font-size: 14px;
   font-weight: 300;
   padding-left: 13px;
+}
+
+#copyrightDiv{
+  background-color: black;
+  opacity: 80%;
+  text-align: center;
+  color: #fff;
 }
