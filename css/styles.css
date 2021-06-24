@@ -36,6 +36,18 @@
   margin-left: 73px;
 }
 
+#editProfileButton{
+  background-image: url('../_img/Icons/Icon_Edit.svg');
+  background-color: white;
+  border-radius: 30px;
+  border: none;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  margin-top: 78px;
+  margin-left: -35px;
+}
+
 #labelEditProfile{
   text-align: center;
   margin-bottom: 30px;
