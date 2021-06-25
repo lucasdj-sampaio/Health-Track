@@ -1,0 +1,30 @@
+#table{
+  margin-top: 7%;
+  padding: 15px 0px 5px 16px;
+}
+
+#qrCode, #attachfile{
+  border: none;
+  width: 30px;
+  height: 30px;
+}
+
+.table{
+  margin-top: 50px;
+  margin-bottom: 14%;
+}
+
+#qrCode{
+  background-image: url('../_img/Icons/Icon_Qr-code.svg');
+}
+
+#attachfile{
+  background-image: url('../_img/Icons/Icon_Attach.svg');
+}
+
+#examButton{
+  border: none;
+  width: 24px;
+  height: 24px;
+  background-image: url('../_img/Icons/Icon_View.svg');
+}
