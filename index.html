@@ -4,6 +4,7 @@
     <title>Health Track - HHO</title>
     <meta charset="utf-8" />
 
+    <!-- #region Bootstrap config/reference-->
     <!-- Make responsive -->
     <meta name="viewport" content="width=device-width , initial-scale=1" />
     <!-- Set style classes -->
@@ -11,167 +12,242 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
-      crossorigin="anonymous"/>
+      crossorigin="anonymous"
+    />
 
-    <!-- Set js reference -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
       crossorigin="anonymous"
     ></script>
+    <!-- #endregion -->
+
+    <!-- Css References -->
+    <link href="css/default.css" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
-
-    <meta name="description" content="O que deve ser exibido" />
   </head>
+
   <body>
-    
+    <!-- #region MenuBar-->
     <nav class="navbar navbar-light bg-light shadow">
-
       <div id="menuBar" class="container-fluid">
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#menuModelBar"> 
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="modal"
+          data-bs-target="#menuModelBar"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
 
         <span class="navbar-brand mb-0 h1">HHO</span>
-
       </div>
-
     </nav>
+    <!-- #endregion -->
 
-    <div class="modal fade" id="menuModelBar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      
+    <!-- #region MenuModa-->
+    <div
+      class="modal fade"
+      id="menuModelBar"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
       <div class="modal-dialog modal-fullscreen">
-
-        <div class="modal-content">
-
+        <div id="modelContent" class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title">MENU</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
           </div>
 
           <div class="modal-body">
-
             <ul class="list-group list-group-flush">
+              <div class="container-fluid">
+                <div class="row">
+                  lucasdj_sampaio
+                  <hr class="userRow" size="3" />
+                </div>
+                <div class="row">
+                  <a href="#">
+                    <img
+                      id="profileEdit"
+                      src="./_img/Index/profile.jpg"
+                      alt="Editar perfil"
+                    />
+                    <button id="editProfileButton"></button>
+                  </a>
+                </div>
+                <div class="row">
+                  <a id="labelEditProfile" href="#"> Editar perfil </a>
+                </div>
+              </div>
 
-							<div class="container-fluid">
-								<div class="row">
-									lucasdj_sampaio
-									<hr class="userRow" size = 3>
-								</div>
-								<div class="row">
-									<a href="#">
-										<img id="profileEdit" src="./_img/Index/profile.jpg" alt="Editar perfil">
-										<button id="editProfileButton"></button>
-									</a>
-								</div>
-								<div class="row">
-									<a id="labelEditProfile" href="#">
-										Editar perfil
-									</a>
-								</div>
-							</div>
-
-							<a href="./index.html" class="list-group-item list-group-item-action">HOME</a>
-              <a href="#" class="list-group-item list-group-item-action">HISTÓRICO MÉDICO</a>
-              <a href="#" class="list-group-item list-group-item-action">CALORIAS</a>
-							<a href="#" class="list-group-item list-group-item-action">ATIVIDADES</a>
-              <a href="./login.html" class="list-group-item list-group-item-action">SAIR</a>
+              <a
+                href="./index.html"
+                class="list-group-item list-group-item-action"
+                >HOME</a
+              >
+              <a href="#" class="list-group-item list-group-item-action"
+                >HISTÓRICO MÉDICO</a
+              >
+              <a href="#" class="list-group-item list-group-item-action"
+                >CALORIAS</a
+              >
+              <a href="#" class="list-group-item list-group-item-action"
+                >ATIVIDADES</a
+              >
+              <a
+                href="./login.html"
+                class="list-group-item list-group-item-action"
+                >SAIR</a
+              >
             </ul>
-
           </div>
         </div>
       </div>
     </div>
-    
+    <!-- #endregion -->
+
+    <!-- #region Carousel-->
     <div class="row">
       <div class="col sm-12 col-md-12 col-lg-12">
-        <div id="carouselHomePage" class="carousel slide" data-bs-ride="carousel">   
-
+        <div
+          id="carouselHomePage"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
           <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselHomePage" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselHomePage" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselHomePage" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button
+              type="button"
+              data-bs-target="#carouselHomePage"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselHomePage"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselHomePage"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
           </div>
-    
+
           <div class="carousel-inner">
-    
             <div class="carousel-item active">
-							<a href="#historic">
-              	<img src="./_img/Index/carousel_1.jpg" class="d-block w-100">
-							</a>
+              <a href="#historic">
+                <img src="./_img/Index/carousel_1.jpg" class="d-block w-100" />
+              </a>
             </div>
 
-						<div class="carousel-item">
-							<a href="#calories">
-              	<img src="./_img/Index/carousel_2.jpg" class="d-block w-100">
-							</a>
+            <div class="carousel-item">
+              <a href="#calories">
+                <img src="./_img/Index/carousel_2.jpg" class="d-block w-100" />
+              </a>
             </div>
 
-						<div class="carousel-item">
-							<a href="#exercices">
-              	<img src="./_img/Index/carousel_3.jpg" class="d-block w-100">
-							</a>
+            <div class="carousel-item">
+              <a href="#exercices">
+                <img src="./_img/Index/carousel_3.jpg" class="d-block w-100" />
+              </a>
             </div>
-    
           </div>
-    
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselHomePage" data-bs-slide="prev">
+
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselHomePage"
+            data-bs-slide="prev"
+          >
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           </button>
-    
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselHomePage" data-bs-slide="next">
+
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselHomePage"
+            data-bs-slide="next"
+          >
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
           </button>
-    
         </div>
-
-				<div id="information">
-					<h1>SUA SAÚDE EM PRIMEIRO LUGAR</h1>
-					<hr size = 4.5>
-
-					<div id="historic" class="row">
-						<div class="col sm-3 col-md-4 col-lg-6">
-							<img src="./_img/Index/historic.jpg" class="d-block w-100">
-						</div>
-						<div class="col sm-3 col-md-4 col-lg-6">
-							<h2>Histórico de exames</h2>
-							<p>Todos as descrições das pessoas são sobre a humanidade do atendimento, a pessoa pega no pulso, examina, olha com carinho. Então eu acho que vai ter outra coisa, que os médicos cubanos trouxeram pro brasil, um alto grau de humanidade.</p>
-						</div>
-					</div>
-
-					<hr size = 4.5>
-					<div id="calories" class="row">
-						<div class="col sm-3 col-md-4 col-lg-6">
-							<h2>Histórico de exames</h2>
-							<p>Todos as descrições das pessoas são sobre a humanidade do atendimento, a pessoa pega no pulso, examina, olha com carinho. Então eu acho que vai ter outra coisa, que os médicos cubanos trouxeram pro brasil, um alto grau de humanidade.</p>
-						</div>
-						<div class="col sm-3 col-md-4 col-lg-6">
-							<img src="./_img/Index/calories.jpg" class="d-block w-100">
-						</div>
-					</div>
-
-					<hr size = 4.5>
-					<div id="exercices" class="row">
-						<div class="col sm-3 col-md-4 col-lg-6">
-							<img src="./_img/Index/exercices.jpg" class="d-block w-100">
-						</div>
-						<div class="col sm-3 col-md-4 col-lg-6">
-							<h2>Histórico de exames</h2>
-							<p>Todos as descrições das pessoas são sobre a humanidade do atendimento, a pessoa pega no pulso, examina, olha com carinho. Então eu acho que vai ter outra coisa, que os médicos cubanos trouxeram pro brasil, um alto grau de humanidade.</p>
-						</div>
-					</div>
-
-				</div>
-
-				<div id="copyrightDiv" class="row">
-					<div class="col sm-12 col-md-12 col-lg-12">
-						<div class="copyright">
-							<footer>Copyright &copy; HHO - Health Historic Online 2021</footer>
-						</div>
-					</div>
-				</div>
       </div>
     </div>
+    <!-- #endregion -->
+
+    <!-- #region Content-->
+    <div id="information">
+      <h1>SUA SAÚDE EM PRIMEIRO LUGAR</h1>
+      <hr size="4.5" />
+
+      <div id="historic" class="row">
+        <div class="col sm-3 col-md-4 col-lg-6">
+          <img src="./_img/Index/historic.jpg" class="d-block w-100" />
+        </div>
+        <div class="col sm-3 col-md-4 col-lg-6">
+          <h2>Histórico de exames</h2>
+          <p>
+            Todos as descrições das pessoas são sobre a humanidade do
+            atendimento, a pessoa pega no pulso, examina, olha com carinho.
+            Então eu acho que vai ter outra coisa, que os médicos cubanos
+            trouxeram pro brasil, um alto grau de humanidade.
+          </p>
+        </div>
+      </div>
+
+      <hr size="4.5" />
+      <div id="calories" class="row">
+        <div class="col sm-3 col-md-4 col-lg-6">
+          <h2>Histórico de exames</h2>
+          <p>
+            Todos as descrições das pessoas são sobre a humanidade do
+            atendimento, a pessoa pega no pulso, examina, olha com carinho.
+            Então eu acho que vai ter outra coisa, que os médicos cubanos
+            trouxeram pro brasil, um alto grau de humanidade.
+          </p>
+        </div>
+        <div class="col sm-3 col-md-4 col-lg-6">
+          <img src="./_img/Index/calories.jpg" class="d-block w-100" />
+        </div>
+      </div>
+
+      <hr size="4.5" />
+      <div id="exercices" class="row">
+        <div class="col sm-3 col-md-4 col-lg-6">
+          <img src="./_img/Index/exercices.jpg" class="d-block w-100" />
+        </div>
+        <div class="col sm-3 col-md-4 col-lg-6">
+          <h2>Histórico de exames</h2>
+          <p>
+            Todos as descrições das pessoas são sobre a humanidade do
+            atendimento, a pessoa pega no pulso, examina, olha com carinho.
+            Então eu acho que vai ter outra coisa, que os médicos cubanos
+            trouxeram pro brasil, um alto grau de humanidade.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- #endregion -->
+
+    <!-- #region Copyright-->
+    <div id="copyrightDiv" class="row">
+      <div class="col sm-12 col-md-12 col-lg-12">
+        <div class="copyright">
+          <footer>Copyright &copy; HHO - Health Historic Online 2021</footer>
+        </div>
+      </div>
+    </div>
+    <!-- #endregion -->
   </body>
 </html>
