@@ -28,299 +28,305 @@
   </head>
 
   <body>
-    <!-- #region MenuBar -->
-    <nav class="navbar navbar-light bg-light shadow">
-      <div id="menuBar" class="container-fluid">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="modal"
-          data-bs-target="#menuModelBar"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <div class="container-fluid">
+      <!-- #region MenuBar -->
+      <nav class="navbar navbar-light bg-light shadow">
+        <div id="menuBar" class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#menuModelBar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-        <span class="navbar-brand mb-0 h1">HHO</span>
-      </div>
-    </nav>
-    <!-- #endregion -->
-
-    <!-- #region MenuModal -->
-    <div
-      class="modal fade"
-      id="menuModelBar"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-fullscreen">
-        <div id="modelContent" class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">MENU</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-
-          <div class="modal-body">
-            <ul class="list-group list-group-flush">
-              <div class="container-fluid">
-                <div class="row">
-                  lucasdj_sampaio
-                  <hr class="userRow" size="3" />
-                </div>
-                <div class="row">
-                  <a href="./profile.html">
-                    <img
-                      id="profileEdit"
-                      src="./_img/Index/profile.jpg"
-                      alt="Editar perfil"
-                    />
-                    <button id="editProfileButton"></button>
-                  </a>
-                </div>
-                <div class="row">
-                  <a id="labelEditProfile" href="./profile.html">
-                    Editar perfil
-                  </a>
-                </div>
-              </div>
-
-              <a
-                href="./index.html"
-                class="list-group-item list-group-item-action"
-                >HOME</a
-              >
-              <a
-                href="./historic.html"
-                class="list-group-item list-group-item-action"
-                >HISTÓRICO MÉDICO</a
-              >
-              <a
-                href="./activities_calories.html"
-                class="list-group-item list-group-item-action"
-                >METAS</a
-              >
-              <a
-                href="./login.html"
-                class="list-group-item list-group-item-action"
-                >SAIR</a
-              >
-            </ul>
-          </div>
+          <span class="navbar-brand mb-0 h1">HHO</span>
         </div>
-      </div>
-    </div>
-    <!-- #endregion -->
+      </nav>
+      <!-- #endregion -->
 
-    <!-- #region QrCodeModal -->
-    <div
-      class="modal fade"
-      id="qrCodeModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5>COMPARTILHE SEUS EXAMES =)</h5>
-
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-
-          <div class="modal-body">
-            <div class="row">
-              <h6>
-                Com o QrCode abaixo é possível compartilhar seus exames com
-                médicos e especialistas
-              </h6>
-            </div>
-
-            <hr size="3" />
-
-            <img src="./_img/Icons/Icon_Qr-code.svg" alt="QrCode" />
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- #endregion -->
-
-    <!-- #region AttachFileModal -->
-    <div
-      class="modal fade"
-      id="attachDoc"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5>VINCULE UM NOVO DOCUMENTO</h5>
-
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-
-          <div class="modal-body">
-            <div>
-              <label> Selecione o tipo do exame:</label>
-              <select
-                class="form-select form-select-sm"
-                aria-label=".form-select-sm example"
-              >
-                <option selected>Exame de Sangue</option>
-                <option value="2">Raio-X</option>
-                <option value="3">Outros</option>
-              </select>
-            </div>
-
-            <hr size="3" />
-
-            <div>
-              <button>SELECIONAR ARQUIVO</button>
-            </div>
-
-            <hr size="3" />
-
-            <div>
+      <!-- #region MenuModal -->
+      <div
+        class="modal fade"
+        id="menuModelBar"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-fullscreen">
+          <div id="modelContent" class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">MENU</h5>
               <button
-                type="submit"
-                class="btn btn-success"
+                type="button"
+                class="btn-close"
                 data-bs-dismiss="modal"
                 aria-label="Close"
-              >
-                ENVIAR ARQUIVO
-              </button>
+              ></button>
+            </div>
+
+            <div class="modal-body">
+              <ul class="list-group list-group-flush">
+                <div class="container-fluid">
+                  <div class="row">
+                    lucasdj_sampaio
+                    <hr class="userRow" size="3" />
+                  </div>
+                  <div class="row">
+                    <a href="./profile.html">
+                      <img
+                        id="profileEdit"
+                        src="./_img/Index/profile.jpg"
+                        alt="Editar perfil"
+                      />
+                      <button id="editProfileButton"></button>
+                    </a>
+                  </div>
+                  <div class="row">
+                    <a id="labelEditProfile" href="./profile.html">
+                      Editar perfil
+                    </a>
+                  </div>
+                </div>
+
+                <a
+                  href="./index.html"
+                  class="list-group-item list-group-item-action"
+                  >HOME</a
+                >
+                <a
+                  href="./historic.html"
+                  class="list-group-item list-group-item-action"
+                  >HISTÓRICO MÉDICO</a
+                >
+                <a
+                  href="./activities_calories.html"
+                  class="list-group-item list-group-item-action"
+                  >METAS</a
+                >
+                <a
+                  href="./login.html"
+                  class="list-group-item list-group-item-action"
+                  >SAIR</a
+                >
+              </ul>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-    <!-- #endregion -->
-
-    <!-- #region ExamModal -->
-    <div
-      class="modal fade"
-      id="exam"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5>RESULTADO DO EXAME</h5>
-
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-
-          <div class="modal-body">
-            <img
-              src="./_img/Historic/bloodExam.jpg"
-              alt="QrCode"
-              width="466px"
-              height="700px"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- #endregion -->
-
-    <!-- #region Content-->
-    <form>
-      <!-- #region Main tittle -->
-      <div id="table" class="row bg-light shadow">
-        <div id="hoLabel" class="col sm-10 col-md-10 col-lg-10">
-          <h3>Histórico de Exames</h3>
-        </div>
-
-        <div id="attachCol" class="col sm-1 col-md-1 col-lg-1">
-          <a type="button" data-bs-toggle="modal" data-bs-target="#attachDoc">
-            <button id="attachfile" class="btn"></button>
-          </a>
-        </div>
-
-        <div id="qrcodeCol" class="col sm-1 col-md-1 col-lg-1">
-          <a type="button" data-bs-toggle="modal" data-bs-target="#qrCodeModal">
-            <button id="qrCode" class="btn"></button>
-          </a>
         </div>
       </div>
       <!-- #endregion -->
 
-      <table class="table bg-light shadow">
-        <thead>
-          <tr>
-            <th scope="col">°</th>
-            <th scope="col">Tipo de exame</th>
-            <th scope="col">Data de modificação</th>
-            <th scope="col">Visualizar</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Exame de Sangue</td>
-            <td>Ontem</td>
-            <td>
-              <a type="button" data-bs-toggle="modal" data-bs-target="#exam">
-                <button id="examButton" class="btn"></button>
-              </a>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td></td>
-            <td>Há uma semana</td>
-            <td>
-              <a type="button" data-bs-toggle="modal" data-bs-target="#exam">
-                <button id="examButton" class="btn"></button>
-              </a>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td></td>
-            <td>15/04/2020</td>
-            <td>
-              <a type="button" data-bs-toggle="modal" data-bs-target="#exam">
-                <button id="examButton" class="btn"></button>
-              </a>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </form>
-    <!-- #endregion -->
+      <!-- #region QrCodeModal -->
+      <div
+        class="modal fade"
+        id="qrCodeModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5>COMPARTILHE SEUS EXAMES =)</h5>
 
-    <!-- #region Copyright-->
-    <div id="copyrightDiv" class="row">
-      <div class="col sm-12 col-md-12 col-lg-12">
-        <div class="copyright">
-          <footer>Copyright &copy; HHO - Health Historic Online 2021</footer>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <div class="modal-body">
+              <div class="row">
+                <h6>
+                  Com o QrCode abaixo é possível compartilhar seus exames com
+                  médicos e especialistas
+                </h6>
+              </div>
+
+              <hr size="3" />
+
+              <img src="./_img/Icons/Icon_Qr-code.svg" alt="QrCode" />
+            </div>
+          </div>
         </div>
       </div>
+      <!-- #endregion -->
+
+      <!-- #region AttachFileModal -->
+      <div
+        class="modal fade"
+        id="attachDoc"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5>VINCULE UM NOVO DOCUMENTO</h5>
+
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <div class="modal-body">
+              <div>
+                <label> Selecione o tipo do exame:</label>
+                <select
+                  class="form-select form-select-sm"
+                  aria-label=".form-select-sm example"
+                >
+                  <option selected>Exame de Sangue</option>
+                  <option value="2">Raio-X</option>
+                  <option value="3">Outros</option>
+                </select>
+              </div>
+
+              <hr size="3" />
+
+              <div>
+                <input type="file" name="" id="" />
+              </div>
+
+              <hr size="3" />
+
+              <div>
+                <button
+                  type="submit"
+                  class="btn btn-success"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                >
+                  ENVIAR ARQUIVO
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- #endregion -->
+
+      <!-- #region ExamModal -->
+      <div
+        class="modal fade"
+        id="exam"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5>RESULTADO DO EXAME</h5>
+
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <div class="modal-body">
+              <img
+                src="./_img/Historic/bloodExam.jpg"
+                alt="QrCode"
+                width="466px"
+                height="700px"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- #endregion -->
+
+      <!-- #region Content-->
+      <form>
+        <!-- #region Main tittle -->
+        <div id="table" class="row bg-light shadow">
+          <div id="hoLabel" class="col sm-10 col-md-10 col-lg-10">
+            <h3>Histórico de Exames</h3>
+          </div>
+
+          <div id="attachCol" class="col sm-1 col-md-1 col-lg-1">
+            <a type="button" data-bs-toggle="modal" data-bs-target="#attachDoc">
+              <button id="attachfile" class="btn"></button>
+            </a>
+          </div>
+
+          <div id="qrcodeCol" class="col sm-1 col-md-1 col-lg-1">
+            <a
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#qrCodeModal"
+            >
+              <button id="qrCode" class="btn"></button>
+            </a>
+          </div>
+        </div>
+        <!-- #endregion -->
+
+        <table class="table bg-light shadow">
+          <thead>
+            <tr>
+              <th scope="col">°</th>
+              <th scope="col">Tipo de exame</th>
+              <th scope="col">Data de modificação</th>
+              <th scope="col">Visualizar</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Exame de Sangue</td>
+              <td>Ontem</td>
+              <td>
+                <a type="button" data-bs-toggle="modal" data-bs-target="#exam">
+                  <button id="examButton" class="btn"></button>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td></td>
+              <td>Há uma semana</td>
+              <td>
+                <a type="button" data-bs-toggle="modal" data-bs-target="#exam">
+                  <button id="examButton" class="btn"></button>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td></td>
+              <td>15/04/2020</td>
+              <td>
+                <a type="button" data-bs-toggle="modal" data-bs-target="#exam">
+                  <button id="examButton" class="btn"></button>
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+      <!-- #endregion -->
+
+      <!-- #region Copyright-->
+      <div id="copyrightDiv" class="row">
+        <div class="col sm-12 col-md-12 col-lg-12">
+          <div class="copyright">
+            <footer>Copyright &copy; HHO - Health Historic Online 2021</footer>
+          </div>
+        </div>
+      </div>
+      <!-- #endregion -->
     </div>
-    <!-- #endregion -->
   </body>
 </html>
