@@ -1,5 +1,5 @@
 #menuBar{
-  background-color: rosybrown;
+  background-color: #7AA7E8;
   opacity: 80%;
 }
 
@@ -12,7 +12,7 @@
 }
 
 .list-group-item:hover{
-  background-color: rosybrown;
+  background-color: #7AA7E8;
   color: white;
 }
 
@@ -59,6 +59,12 @@
   color: #fff;
 }
 
-p, h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6{
   font-family: 'Work Sans', sans-serif;
+  color: #6083B5;
+}
+
+p{
+  font-family: 'Work Sans', sans-serif;
+
 }

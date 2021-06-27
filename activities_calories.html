@@ -24,97 +24,106 @@
 
     <!-- Css References -->
     <link href="css/default.css" rel="stylesheet" />
-    <link href="" rel="stylesheet" />
+    <link href="css/activities.css" rel="stylesheet" />
   </head>
 
   <body>
-    <!-- #region MenuBar-->
-    <nav class="navbar navbar-light bg-light shadow">
-      <div id="menuBar" class="container-fluid">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="modal"
-          data-bs-target="#menuModelBar"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <!-- #region MenuBar-->
+          <nav class="navbar navbar-light bg-light shadow">
+            <div id="menuBar" class="container-fluid">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#menuModelBar"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
 
-        <span class="navbar-brand mb-0 h1">HHO</span>
+              <span class="navbar-brand mb-0 h1">HHO</span>
+            </div>
+          </nav>
+          <!-- #endregion -->
+        </div>
       </div>
-    </nav>
-    <!-- #endregion -->
 
-    <!-- #region MenuModa-->
-    <div
-      class="modal fade"
-      id="menuModelBar"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-fullscreen">
-        <div id="modelContent" class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">MENU</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-header">
+              <h1>Peso</h1>
+            </div>
 
-          <div class="modal-body">
-            <ul class="list-group list-group-flush">
-              <div class="container-fluid">
-                <div class="row">
-                  lucasdj_sampaio
-                  <hr class="userRow" size="3" />
+            <div class="card-body">
+              <div class="row bg-light shadow">
+                <div class="col-sm-12 col-md-8 col-lg-8">
+                  <h1>Histórico</h1>
+                  <div class="container-data-weight bg-light shadow">
+                    <div class="container-weight">
+                      <h2>Janeiro</h2>
+
+                      <div>
+                        <p>80 Kg</p>
+                      </div>
+                    </div>
+
+                    <div class="container-weight">
+                      <h2>Fevereiro</h2>
+
+                      <div>
+                        <p>70 Kg</p>
+                      </div>
+                    </div>
+
+                    <div class="container-weight">
+                      <h2>Março</h2>
+
+                      <div>
+                        <p>75 Kg</p>
+                      </div>
+                    </div>
+
+                    <div class="container-weight">
+                      <h2>Abril</h2>
+
+                      <div>
+                        <p>70 Kg</p>
+                      </div>
+                    </div>
+
+                    <div class="container-weight">
+                      <h2>Maio</h2>
+
+                      <div>
+                        <p>75 Kg</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="row">
-                  <a href="./profile.html">
-                    <img
-                      id="profileEdit"
-                      src="./_img/Index/profile.jpg"
-                      alt="Editar perfil"
-                    />
-                    <button id="editProfileButton"></button>
-                  </a>
-                </div>
-                <div class="row">
-                  <a id="labelEditProfile" href="./profile.html">
-                    Editar perfil
-                  </a>
+
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                  <h1>Meta</h1>
+
+                  <div class="container-data-weight-current bg-light shadow">
+                    <div class="container-weight">
+                      <h2>Atual</h2>
+
+                      <div>
+                        <p>78 Kg</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-
-              <a
-                href="./index.html"
-                class="list-group-item list-group-item-action"
-                >HOME</a
-              >
-              <a
-                href="./historic.html"
-                class="list-group-item list-group-item-action"
-                >HISTÓRICO MÉDICO</a
-              >
-              <a
-                href="./activities_calories.html"
-                class="list-group-item list-group-item-action"
-                >METAS</a
-              >
-              <a
-                href="./login.html"
-                class="list-group-item list-group-item-action"
-                >SAIR</a
-              >
-            </ul>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- #endregion -->
+    <!--End container-fluid-->
 
     <!-- #region Copyright-->
     <div id="copyrightDiv" class="row">
@@ -126,4 +135,75 @@
     </div>
     <!-- #endregion -->
   </body>
+
+  <!-- #region MenuModa-->
+  <div
+    class="modal fade"
+    id="menuModelBar"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-fullscreen">
+      <div id="modelContent" class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">MENU</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+
+        <div class="modal-body">
+          <ul class="list-group list-group-flush">
+            <div class="container-fluid">
+              <div class="row">
+                lucasdj_sampaio
+                <hr class="userRow" size="3" />
+              </div>
+              <div class="row">
+                <a href="./profile.html">
+                  <img
+                    id="profileEdit"
+                    src="./_img/Index/profile.jpg"
+                    alt="Editar perfil"
+                  />
+                  <button id="editProfileButton"></button>
+                </a>
+              </div>
+              <div class="row">
+                <a id="labelEditProfile" href="./profile.html">
+                  Editar perfil
+                </a>
+              </div>
+            </div>
+
+            <a
+              href="./index.html"
+              class="list-group-item list-group-item-action"
+              >HOME</a
+            >
+            <a
+              href="./historic.html"
+              class="list-group-item list-group-item-action"
+              >HISTÓRICO MÉDICO</a
+            >
+            <a
+              href="./activities_calories.html"
+              class="list-group-item list-group-item-action"
+              >METAS</a
+            >
+            <a
+              href="./login.html"
+              class="list-group-item list-group-item-action"
+              >SAIR</a
+            >
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- #endregion -->
 </html>
