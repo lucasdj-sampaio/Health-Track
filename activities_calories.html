@@ -147,31 +147,57 @@
                         <tr>
                           <th scope="col">°</th>
                           <th scope="col">Exercício</th>
+                          <th scope="col">
+                            Meta - Perca/Ganho de calorias p/mês
+                          </th>
+                          <th scope="col">Novo registro</th>
                           <th scope="col">Histórico</th>
                         </tr>
                       </thead>
+
                       <tbody>
                         <tr>
                           <th scope="row">1</th>
                           <td>Academia</td>
+                          <td>1000kcal</td>
                           <td>
                             <a
                               type="button"
                               data-bs-toggle="modal"
-                              data-bs-target="#examSangue"
+                              data-bs-target="#alterGoal"
+                            >
+                              <button id="newRegister" class="btn"></button>
+                            </a>
+                          </td>
+                          <td>
+                            <a
+                              type="button"
+                              data-bs-toggle="modal"
+                              data-bs-target="#viewActivities1"
                             >
                               <button id="viewButton" class="btn"></button>
                             </a>
                           </td>
                         </tr>
+
                         <tr>
                           <th scope="row">2</th>
                           <td>Natação</td>
+                          <td>-4391kcal</td>
                           <td>
                             <a
                               type="button"
                               data-bs-toggle="modal"
-                              data-bs-target="#examRaio-x"
+                              data-bs-target="#alterGoal"
+                            >
+                              <button id="newRegister" class="btn"></button>
+                            </a>
+                          </td>
+                          <td>
+                            <a
+                              type="button"
+                              data-bs-toggle="modal"
+                              data-bs-target="#viewActivities2"
                             >
                               <button id="viewButton" class="btn"></button>
                             </a>
@@ -293,17 +319,28 @@
         </div>
 
         <div class="modal-body">
-          <div>
-            <label for="basic-url" class="form-label"> Nova meta </label>
+          <div class="row">
+            <div class="col-6">
+              <label for="basic-url" class="form-label">Tipo de registro</label>
 
-            <div class="input-group mb-3">
-              <input
-                placeholder="Ex: 00.00"
-                type="number"
-                class="form-control"
-                id="basic-url"
-                aria-describedby="basic-addon3"
-              />
+              <div class="input-group mb-3">
+                <select class="form-select">
+                  <option selected>Nova meta</option>
+                  <option value="1">Histórico</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-6">
+              <label for="basic-url" class="form-label">Valor</label>
+              <div class="input-group mb-3">
+                <input
+                  placeholder="Ex: 00.00"
+                  type="number"
+                  class="form-control"
+                  id="basic-url"
+                  aria-describedby="basic-addon3"
+                />
+              </div>
             </div>
 
             <hr size="3" />
@@ -314,8 +351,122 @@
               data-bs-dismiss="modal"
               aria-label="Close"
             >
-              ATUALIZAR META
+              ATUALIZAR
             </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- #endregion -->
+
+  <!-- #region historicActivits 1 -->
+  <div
+    class="modal fade"
+    id="viewActivities1"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5>HISTÓRICO</h5>
+
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+              <div class="container-data-weight">
+                <div class="container-weight">
+                  <h2>Abril</h2>
+
+                  <div>
+                    <p>+134Kcal</p>
+                  </div>
+                </div>
+
+                <div class="container-weight">
+                  <h2>Maio</h2>
+
+                  <div>
+                    <p>+998Kcal</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- #endregion -->
+
+  <!-- #region historicActivits 2 -->
+  <div
+    class="modal fade"
+    id="viewActivities2"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5>HISTÓRICO</h5>
+
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+              <div class="container-data-weight">
+                <div class="container-weight">
+                  <h2>Abril</h2>
+
+                  <div>
+                    <p>-2083Kcal</p>
+                  </div>
+                </div>
+
+                <div class="container-weight">
+                  <h2>Maio</h2>
+
+                  <div>
+                    <p>-1005Kcal</p>
+                  </div>
+                </div>
+
+                <div class="container-weight">
+                  <h2>Junho</h2>
+
+                  <div>
+                    <p>-1116Kcal</p>
+                  </div>
+                </div>
+
+                <div class="container-weight">
+                  <h2>Julho</h2>
+
+                  <div>
+                    <p>-1232Kcal</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

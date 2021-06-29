@@ -75,3 +75,10 @@ p{
   height: 24px;
   background-image: url('../_img/Icons/Icon_View.svg');
 }
+
+#newRegister{
+  background-image: url('../_img/Icons/Icon_Edit.svg');
+  border: none;
+  width: 24px;
+  height: 24px;
+}
