@@ -51,6 +51,11 @@ h1{ font-size: 20px; }
   border-radius: 4px;
 }
 
+.card{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 @media (max-width: 768px){
   .container-data-weight{
     display: flex;

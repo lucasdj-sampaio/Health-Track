@@ -21,10 +21,3 @@
 #attachfile{
   background-image: url('../_img/Icons/Icon_Attach.svg');
 }
-
-#examButton{
-  border: none;
-  width: 24px;
-  height: 24px;
-  background-image: url('../_img/Icons/Icon_View.svg');
-}

@@ -46,210 +46,8 @@
       </nav>
       <!-- #endregion -->
 
-      <!-- #region MenuModal -->
-      <div
-        class="modal fade"
-        id="menuModelBar"
-        tabindex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-fullscreen">
-          <div id="modelContent" class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">MENU</h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-
-            <div class="modal-body">
-              <ul class="list-group list-group-flush">
-                <div class="container-fluid">
-                  <div class="row">
-                    lucasdj_sampaio
-                    <hr class="userRow" size="3" />
-                  </div>
-                  <div class="row">
-                    <a href="./profile.html">
-                      <img
-                        id="profileEdit"
-                        src="./_img/Index/profile.jpg"
-                        alt="Editar perfil"
-                      />
-                      <button id="editProfileButton"></button>
-                    </a>
-                  </div>
-                  <div class="row">
-                    <a id="labelEditProfile" href="./profile.html">
-                      Editar perfil
-                    </a>
-                  </div>
-                </div>
-
-                <a
-                  href="./index.html"
-                  class="list-group-item list-group-item-action"
-                  >HOME</a
-                >
-                <a
-                  href="./historic.html"
-                  class="list-group-item list-group-item-action"
-                  >HISTÓRICO MÉDICO</a
-                >
-                <a
-                  href="./activities_calories.html"
-                  class="list-group-item list-group-item-action"
-                  >METAS</a
-                >
-                <a
-                  href="./login.html"
-                  class="list-group-item list-group-item-action"
-                  >SAIR</a
-                >
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- #endregion -->
-
-      <!-- #region QrCodeModal -->
-      <div
-        class="modal fade"
-        id="qrCodeModal"
-        tabindex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5>COMPARTILHE SEUS EXAMES =)</h5>
-
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-
-            <div class="modal-body">
-              <div class="row">
-                <h6>
-                  Com o QrCode abaixo é possível compartilhar seus exames com
-                  médicos e especialistas
-                </h6>
-              </div>
-
-              <hr size="3" />
-
-              <img src="./_img/Icons/Icon_Qr-code.svg" alt="QrCode" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- #endregion -->
-
-      <!-- #region AttachFileModal -->
-      <div
-        class="modal fade"
-        id="attachDoc"
-        tabindex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5>VINCULE UM NOVO DOCUMENTO</h5>
-
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-
-            <div class="modal-body">
-              <div>
-                <label> Selecione o tipo do exame:</label>
-                <select
-                  class="form-select form-select-sm"
-                  aria-label=".form-select-sm example"
-                >
-                  <option selected>Exame de Sangue</option>
-                  <option value="2">Raio-X</option>
-                  <option value="3">Outros</option>
-                </select>
-              </div>
-
-              <hr size="3" />
-
-              <div>
-                <input type="file" name="" id="" />
-              </div>
-
-              <hr size="3" />
-
-              <div>
-                <button
-                  type="submit"
-                  class="btn btn-success"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                >
-                  ENVIAR ARQUIVO
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- #endregion -->
-
-      <!-- #region ExamModal -->
-      <div
-        class="modal fade"
-        id="exam"
-        tabindex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5>RESULTADO DO EXAME</h5>
-
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-
-            <div class="modal-body">
-              <img
-                src="./_img/Historic/bloodExam.jpg"
-                alt="QrCode"
-                width="466px"
-                height="700px"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- #endregion -->
-
       <!-- #region Content-->
       <form>
-        <!-- #region Main tittle -->
         <div id="table" class="row bg-light shadow">
           <div id="hoLabel" class="col sm-10 col-md-10 col-lg-10">
             <h3>Histórico de Exames</h3>
@@ -271,7 +69,6 @@
             </a>
           </div>
         </div>
-        <!-- #endregion -->
 
         <table class="table bg-light shadow">
           <thead>
@@ -288,28 +85,40 @@
               <td>Exame de Sangue</td>
               <td>Ontem</td>
               <td>
-                <a type="button" data-bs-toggle="modal" data-bs-target="#exam">
-                  <button id="examButton" class="btn"></button>
+                <a
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#examSangue"
+                >
+                  <button id="viewButton" class="btn"></button>
                 </a>
               </td>
             </tr>
             <tr>
               <th scope="row">2</th>
-              <td></td>
+              <td>Raio-X</td>
               <td>Há uma semana</td>
               <td>
-                <a type="button" data-bs-toggle="modal" data-bs-target="#exam">
-                  <button id="examButton" class="btn"></button>
+                <a
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#examRaio-x"
+                >
+                  <button id="viewButton" class="btn"></button>
                 </a>
               </td>
             </tr>
             <tr>
               <th scope="row">3</th>
-              <td></td>
+              <td>Coleta de urina</td>
               <td>15/04/2020</td>
               <td>
-                <a type="button" data-bs-toggle="modal" data-bs-target="#exam">
-                  <button id="examButton" class="btn"></button>
+                <a
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#examUrina"
+                >
+                  <button id="viewButton" class="btn"></button>
                 </a>
               </td>
             </tr>
@@ -329,4 +138,271 @@
       <!-- #endregion -->
     </div>
   </body>
+
+  <!-- #region MenuModal -->
+  <div
+    class="modal fade"
+    id="menuModelBar"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-fullscreen">
+      <div id="modelContent" class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">MENU</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+
+        <div class="modal-body">
+          <ul class="list-group list-group-flush">
+            <div class="container-fluid">
+              <div class="row">
+                lucasdj_sampaio
+                <hr class="userRow" size="3" />
+              </div>
+              <div class="row">
+                <a href="./profile.html">
+                  <img
+                    id="profileEdit"
+                    src="./_img/Index/profile.jpg"
+                    alt="Editar perfil"
+                  />
+                  <button id="editProfileButton"></button>
+                </a>
+              </div>
+              <div class="row">
+                <a id="labelEditProfile" href="./profile.html">
+                  Editar perfil
+                </a>
+              </div>
+            </div>
+
+            <a
+              href="./index.html"
+              class="list-group-item list-group-item-action"
+              >HOME</a
+            >
+            <a
+              href="./historic.html"
+              class="list-group-item list-group-item-action"
+              >HISTÓRICO MÉDICO</a
+            >
+            <a
+              href="./activities_calories.html"
+              class="list-group-item list-group-item-action"
+              >METAS</a
+            >
+            <a
+              href="./login.html"
+              class="list-group-item list-group-item-action"
+              >SAIR</a
+            >
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- #endregion -->
+
+  <!-- #region QrCodeModal -->
+  <div
+    class="modal fade"
+    id="qrCodeModal"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5>COMPARTILHE SEUS EXAMES =)</h5>
+
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+
+        <div class="modal-body">
+          <div class="row">
+            <h6>
+              Com o QrCode abaixo é possível compartilhar seus exames com
+              médicos e especialistas
+            </h6>
+          </div>
+
+          <hr size="3" />
+
+          <img src="./_img/Icons/Icon_Qr-code.svg" alt="QrCode" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- #endregion -->
+
+  <!-- #region AttachFileModal -->
+  <div
+    class="modal fade"
+    id="attachDoc"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5>VINCULE UM NOVO DOCUMENTO</h5>
+
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+
+        <div class="modal-body">
+          <div>
+            <label> Selecione o tipo do exame:</label>
+            <select
+              class="form-select form-select-sm"
+              aria-label=".form-select-sm example"
+            >
+              <option selected>Exame de Sangue</option>
+              <option value="2">Raio-X</option>
+              <option value="3">Coleta de urina</option>
+              <option value="4">Outros</option>
+            </select>
+          </div>
+
+          <hr size="3" />
+
+          <div>
+            <input type="file" name="" id="" />
+          </div>
+
+          <hr size="3" />
+
+          <div>
+            <button
+              type="submit"
+              class="btn btn-success"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              ENVIAR ARQUIVO
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- #endregion -->
+
+  <!-- #region ExamModal 1 -->
+  <div
+    class="modal fade"
+    id="examSangue"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5>RESULTADO DO EXAME</h5>
+
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+
+        <div class="modal-body">
+          <img
+            src="./_img/Historic/bloodExam.jpg"
+            width="466px"
+            height="700px"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- #endregion -->
+
+  <!-- #region ExamModal 2 -->
+  <div
+    class="modal fade"
+    id="examRaio-x"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5>RESULTADO DO EXAME</h5>
+
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+
+        <div class="modal-body">
+          <img
+            src="./_img/Historic/xrayExam.jpg"
+            width="466px"
+            height="700px"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- #endregion -->
+
+  <!-- #region ExamModal 3 -->
+  <div
+    class="modal fade"
+    id="examUrina"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5>RESULTADO DO EXAME</h5>
+
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+
+        <div class="modal-body">
+          <img
+            src="./_img/Historic/urineExam.jpg"
+            width="466px"
+            height="700px"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- #endregion -->
 </html>
